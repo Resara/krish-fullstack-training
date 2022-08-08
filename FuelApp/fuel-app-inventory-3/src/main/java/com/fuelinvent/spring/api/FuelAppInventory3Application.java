@@ -1,0 +1,13 @@
+package com.fuelinvent.spring.api;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FuelAppInventory3Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FuelAppInventory3Application.class, args);
+	}
+
+}
