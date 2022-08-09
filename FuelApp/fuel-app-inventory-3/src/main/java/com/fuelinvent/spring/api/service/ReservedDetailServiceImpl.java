@@ -5,7 +5,6 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import com.fuelinvent.spring.api.config.kafkaTopicConfig;
-import com.fuelinvent.spring.api.config.kafkaTopicOrder;
 import com.fuelinvent.spring.api.model.Reserve;
 import com.fuelinvent.spring.api.repository.ReservedDetailRepository;
 
@@ -22,7 +21,7 @@ public class ReservedDetailServiceImpl implements ReservedDetailService{
 	@Override
 	public Reserve addReserveDetails(Reserve reserve) {
 		kafkaTemplate.send(kafkaTopicConfig.MESSAGE_TOPIC,reserve);
-		kafkaTemplate.send(kafkaTopicOrder.MESSAGE_TOPIC,reserve);		
+		kafkaTemplate.send(kafkaTopicConfig.MESSAGE_TOPIC,reserve);		
 		return reservedDetailRepository.save(reserve);
 	}
 

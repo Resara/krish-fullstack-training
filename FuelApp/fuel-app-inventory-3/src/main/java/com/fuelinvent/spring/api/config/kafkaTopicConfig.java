@@ -7,7 +7,7 @@ import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
 public class kafkaTopicConfig {
-	public static final String MESSAGE_TOPIC = "orderTopic";
+	public static final String MESSAGE_TOPIC = "inventoryTopic";
 
     @Bean
     public NewTopic myTopic(){

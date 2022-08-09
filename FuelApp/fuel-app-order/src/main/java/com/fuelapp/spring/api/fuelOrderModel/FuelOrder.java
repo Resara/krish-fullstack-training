@@ -25,6 +25,9 @@ public class FuelOrder {
 	private String fuelType;
 	private int fuelQTY;
 	private String status = "Pending";
+	private String date = "Pending";
+	
+	
 	
 	
 	public int getOrderID() {
@@ -63,6 +66,15 @@ public class FuelOrder {
 	public void setFuelQTY(int fuelQTY) {
 		this.fuelQTY = fuelQTY;
 	}
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
+	
+	
+	
 	
 
 	
